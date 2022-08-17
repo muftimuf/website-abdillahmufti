@@ -1,0 +1,295 @@
+:root {
+  --merah: #d82727;
+  --putih: #dedede;
+  --hitam: #000305;
+  --abu: rgba(237, 237, 237, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SatoshiBold", sans-serif;
+  background-color: var(--hitam);
+  color: var(--putih);
+  overflow-x: hidden;
+}
+
+a,
+a:hover {
+  color: var(--putih);
+  text-decoration: none;
+}
+
+.clash-display {
+  font-family: "ClashDisplayBold", sans-serif;
+}
+.satoshi-reg {
+  font-family: "SatoshiRegular";
+}
+.satoshi-md {
+  font-family: "SatoshiMedium";
+}
+.satoshi-bold {
+  font-family: "SatoshiBold";
+}
+
+.text-merah {
+  color: var(--merah);
+}
+.text-putih {
+  color: var(--putih);
+}
+.text-hitam {
+  color: var(--hitam);
+}
+.text-abu {
+  color: var(--abu);
+}
+.bg-merah {
+  background-color: var(--merah);
+}
+.bg-putih {
+  background-color: var(--putih);
+}
+.bg-hitam {
+  background-color: var(--hitam);
+}
+.bg-abu {
+  background-color: var(--abu);
+}
+
+section {
+  padding: 150px 0;
+}
+
+section#hero-section {
+  padding: 0;
+}
+
+.container {
+  width: 90vw;
+  margin: auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.text-6xl {
+  font-size: 6rem;
+}
+
+.text-5xl {
+  font-size: 5rem;
+}
+
+.text-4xl {
+  font-size: 4rem;
+}
+
+.text-3xl {
+  font-size: 3.2rem;
+}
+
+.text-2xl {
+  font-size: 2.5rem;
+}
+
+.text-xl {
+  font-size: 2rem;
+}
+
+.text-lg {
+  font-size: 1.5rem;
+}
+
+.text-md {
+  font-size: 1.25rem;
+}
+
+.text-base {
+  font-size: 16px;
+}
+
+.text-sm {
+  font-size: 0.812rem;
+}
+
+.text-xs {
+  font-size: 0.625rem;
+}
+
+.hero-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.monas {
+  z-index: 99;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.monas-kiri {
+  position: relative;
+  left: 0;
+
+  height: 100vh;
+  width: auto;
+  animation: monas-kiri 5s ease-out 0.5s forwards;
+}
+
+.monas-kanan {
+  position: relative;
+  right: 0;
+  background-color: var(--hitam);
+  height: 100vh;
+  width: auto;
+  animation: monas-kanan 5s ease-out 0.5s forwards;
+}
+
+@keyframes monas-kiri {
+  0% {
+    left: 0;
+    opacity: 1;
+  }
+  100% {
+    left: -100%;
+    opacity: 0;
+  }
+}
+
+@keyframes monas-kanan {
+  0% {
+    right: 0;
+    opacity: 1;
+  }
+  100% {
+    right: -100%;
+    opacity: 0;
+  }
+}
+
+.hero-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  animation: hero-text 2s ease-out 1s forwards;
+}
+
+@keyframes hero-text {
+  0% {
+    bottom: -30%;
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.indonesia-merdeka {
+  position: relative;
+  top: -3rem;
+}
+
+.quote-soekarno {
+  text-align: center;
+}
+
+.video-youtube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-fs {
+  opacity: 0.25;
+  height: 500px;
+  position: absolute;
+  z-index: -1;
+  top: -50%;
+  left: 60%;
+  transform: translateX(-50%);
+}
+
+.bar-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+.bar-3 {
+  font-size: 2.5rem;
+}
+
+.align-right {
+  text-align: end;
+}
+
+.quote-ibu {
+  margin: 0 0 40px 0;
+}
+
+.berita-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 3;
+  padding: 2rem;
+  border: 2px solid var(--putih);
+  column-gap: 5rem;
+}
+
+.berita-card-caption {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 5rem;
+}
+
+.berita-button {
+  position: relative;
+  top: 0;
+  right: 0;
+  padding: 16px 32px;
+  background-color: var(--putih);
+  color: var(--hitam);
+  box-shadow: 0 0 var(--putih);
+  transition: 0.2s ease-in-out;
+}
+.berita-button:hover {
+  top: -0.5rem;
+  right: -0.5rem;
+  box-shadow: -0.75rem 0.75rem var(--putih);
+  background-color: var(--merah);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background-color: var(--merah);
+}
