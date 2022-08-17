@@ -2,6 +2,8 @@
 
 Website ini terinspirasi dari kutipan Bung Karno di mana sekarang kita bukan lagi melawan penjajah, namun kita melawan bangsa sendiri. Isi dari web ini berupa penggalan lirik dari lagu rap Tuan Tigabelas - Fought the System yang menggambarkan kutipan dari Bung Karno tersebut.
 
+Link Github Pages : https://muftimuf.github.io/website-abdillahmufti/
+
 ## Pengumpulan Lomba CuyUniverse 
 
 | Title        |   | Description                    |   
